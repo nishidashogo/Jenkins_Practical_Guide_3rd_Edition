@@ -4,16 +4,16 @@ phases:
   install: 
     runtime-versions: 
       java: corretto11
-    pre_build: 
-      commands: 
-        - echo Nothing to do in this phase
-    build: 
-      commands: 
-        - echo Build started on `date` 
-        - mvn clean package
-    post_build:
-      commands: 
-        - ls
+  pre_build:
+    commands: 
+      - echo Nothing to do in this phase
+  build:
+    commands: 
+      - echo Build started on `date` 
+      - mvn clean package
+  post_build:
+    commands: 
+      - ls
 artifacts: 
   files:
     - target/sampleproject.war
