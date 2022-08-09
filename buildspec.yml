@@ -14,12 +14,12 @@ phases:
     post_build:
       commands: 
         - echo Nothing to do in this phase
-   artifacts: 
-    files: 
-      - target/sampleproject.war
-      - appspec.yml
-      - deploy.sh
-      discard-paths: yes 
-   cache: 
-    paths: 
-     - '/root/.m2/**/*' 
+artifacts: 
+  files:
+    - target/sampleproject.war
+    - appspec.yml
+    - deploy.sh
+  discard-paths: yes 
+cache:
+  paths: 
+  - '/root/.m2/**/*' 
